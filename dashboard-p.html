@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>RockJS Framework </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="#">
+    <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- flag icon framework css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+    <!--SVG Icons Animated-->
+    <link rel="stylesheet" type="text/css" href="assets/icon/SVG-animated/svg-weather.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Horizontal-Timeline css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/dashboard/horizontal-timeline/css/style.css">
+    <!-- amchart css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/dashboard/amchart/css/amchart.css">
+    <!-- Calender css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/widget/calender/pignose.calendar.min.css">
+    <!-- flag icon framework css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+
+</head>
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+                <div class="ring"><div class="frame"></div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <!-- Menu header start -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a class="mobile-search morphsearch-search" href="#">
+                            <i class="ti-search"></i>
+                        </a>
+                        <a href="index.html">
+                            <img class="img-fluid" width=70 height=90 src="assets/images/logo.png" alt="Theme-Logo" />
+                        </a>
+                        
+                        <a class="mobile-options">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-right">
+						    <li class="header-notification lng-dropdown">
+                                <a href="#" id="dropdown-active-item">
+                                    <i class="flag-icon flag-icon-gb m-r-5"></i> English
+                                </a>
+                                <ul class="show-notification">
+                                    <li>
+                                        <a href="#" data-lng="en">
+                                            <i class="flag-icon flag-icon-gb m-r-5"></i> English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-lng="es">
+                                            <i class="flag-icon flag-icon-es m-r-5"></i> Spanish
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-lng="pt">
+                                            <i class="flag-icon flag-icon-pt m-r-5"></i> Portuguese
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-lng="fr">
+                                            <i class="flag-icon flag-icon-fr m-r-5"></i> French
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-notification">
+                                <a href="#!">
+                                    <i class="ti-bell"></i>
+                                    <span class="badge bg-c-pink"></span>
+                                </a>
+                                <ul class="show-notification">
+                                    <li>
+                                        <h6>Notifications</h6>
+                                        <label class="label label-danger">New</label>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center" src="assets/images/QAD.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">John Doe</h5>
+                                                <p class="notification-msg">Reunion con los clientes</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center" src="assets/images/QAD.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Recepcion de clientes.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center" src="assets/images/QAD.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Sara Soudein</h5>
+                                                <p class="notification-msg">Revision de ventas</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-notification">
+                                <a href="#!" class="displayChatbox">
+                                    <i class="ti-comments"></i>
+                                    <span class="badge bg-c-green"></span>
+                                </a>
+                            </li>
+                            <li class="user-profile header-notification">
+                                <a href="#!">
+                                    <img src="assets/images/QAD.jpg" class="img-radius" alt="User-Profile-Image">
+                                    <span>John Doe</span>
+                                    <i class="ti-angle-down"></i>
+                                </a>
+                                <ul class="show-notification profile-notification">
+                                    <li>
+                                        <a href="#!">
+                                            <i class="ti-settings"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="user-p.html">
+                                            <i class="ti-user"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="ti-email"></i> My Messages
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="ti-lock"></i> Lock Screen
+                                        </a>
+                                    </li>
+                                    <li>
+                                    <a href="sign-in.html">
+                                        <i class="ti-layout-sidebar-left"></i> Logout
+                                    </a>
+                                </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- search -->
+                        <div id="morphsearch" class="morphsearch">
+                            <form class="morphsearch-form">
+                                <input class="morphsearch-input" type="search" placeholder="Search..." />
+                                <button class="morphsearch-submit" type="submit">Search</button>
+                            </form>
+                            <div class="morphsearch-content">
+                                <div class="dummy-column">
+                                    <h2>People</h2>
+                                    <a class="dummy-media-object" href="#!">
+                                        <img src="assets/images/avatar-1.jpg" alt="Sara Soueidan" />
+                                        <h3>Sara Soueidan</h3>
+                                    </a>
+                                    <a class="dummy-media-object" href="#!">
+                                        <img src="assets/images/avatar-2.jpg" alt="Shaun Dona" />
+                                        <h3>Shaun Dona</h3>
+                                    </a>
+                                </div>
+                                <div class="dummy-column">
+                                    <h2>Popular</h2>
+                                    <a class="dummy-media-object" href="#!">
+                                        <img src="assets/images/avatar-3.jpg" alt="PagePreloadingEffect" />
+                                        <h3>Page Preloading Effect</h3>
+                                    </a>
+                                    <a class="dummy-media-object" href="#!">
+                                        <img src="assets/images/QAD.jpg" alt="DraggableDualViewSlideshow" />
+                                        <h3>Draggable Dual-View Slideshow</h3>
+                                    </a>
+                                </div>
+                                <div class="dummy-column">
+                                    <h2>Recent</h2>
+                                    <a class="dummy-media-object" href="#!">
+                                        <img src="assets/images/avatar-5.jpg" alt="TooltipStylesInspiration" />
+                                        <h3>Tooltip Styles Inspiration</h3>
+                                    </a>
+                                    <a class="dummy-media-object" href="#!">
+                                        <img src="assets/images/avatar-6.jpg" alt="NotificationStyles" />
+                                        <h3>Notification Styles Inspiration</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /morphsearch-content -->
+                            <span class="morphsearch-close"><i class="icofont icofont-search-alt-1"></i></span>
+                        </div>
+                        <!-- search end -->
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Sidebar chat start -->
+            <div id="sidebar" class="users p-chat-user showChat">
+                <div class="had-container">
+                    <div class="card card_main p-fixed users-main">
+                        <div class="user-box">
+                            <div class="card-block">
+                                <div class="right-icon-control">
+                                    <input type="text" class="form-control  search-text" placeholder="Search Friend" id="search-friends">
+                                    <div class="form-icon">
+                                        <i class="icofont icofont-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-friend-list">
+                                <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/qad.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Josephin Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe" data-toggle="tooltip" data-placement="left" title="Lary Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Lary Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alice</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="4" data-status="online" data-username="Alia" data-toggle="tooltip" data-placement="left" title="Alia">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alia</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="5" data-status="online" data-username="Suzen" data-toggle="tooltip" data-placement="left" title="Suzen">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-5.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Suzen</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="6" data-status="offline" data-username="Michael Scofield" data-toggle="tooltip" data-placement="left" title="Michael Scofield">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-6.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Michael Scofield</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="7" data-status="online" data-username="Irina Shayk" data-toggle="tooltip" data-placement="left" title="Irina Shayk">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-7.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Irina Shayk</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="8" data-status="offline" data-username="Sara Tancredi" data-toggle="tooltip" data-placement="left" title="Sara Tancredi">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-1.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Sara Tancredi</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="9" data-status="online" data-username="Samon" data-toggle="tooltip" data-placement="left" title="Samon">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Samon</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="10" data-status="online" data-username="Daizy Mendize" data-toggle="tooltip" data-placement="left" title="Daizy Mendize">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Daizy Mendize</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="11" data-status="offline" data-username="Loren Scofield" data-toggle="tooltip" data-placement="left" title="Loren Scofield">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Loren Scofield</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="12" data-status="online" data-username="Shayk" data-toggle="tooltip" data-placement="left" title="Shayk">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-5.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Shayk</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="13" data-status="offline" data-username="Sara" data-toggle="tooltip" data-placement="left" title="Sara">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-6.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Sara</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="14" data-status="online" data-username="Doe" data-toggle="tooltip" data-placement="left" title="Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-7.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="15" data-status="online" data-username="Lary" data-toggle="tooltip" data-placement="left" title="Lary">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object" src="assets/images/avatar-1.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Lary</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar inner chat start-->
+            <div class="showChat_inner">
+                <div class="media chat-inner-header">
+                    <a class="back_chatBox">
+                        <i class="icofont icofont-rounded-left"></i> Josephin Doe
+                    </a>
+                </div>
+                <div class="media chat-messages">
+                    <a class="media-left photo-table" href="#!">
+                        <img class="media-object img-circle m-t-5" src="assets/images/avatar-1.jpg" alt="Generic placeholder image">
+                    </a>
+                    <div class="media-body chat-menu-content">
+                        <div class="">
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media chat-messages">
+                    <div class="media-body chat-menu-reply">
+                        <div class="">
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                    <div class="media-right photo-table">
+                        <a href="#!">
+                            <img class="media-object img-circle m-t-5" src="assets/images/user.png" alt="Generic placeholder image">
+                        </a>
+                    </div>
+                </div>
+                <div class="chat-reply-box p-b-20">
+                    <div class="right-icon-control">
+                        <input type="text" class="form-control search-text" placeholder="Share Your Thoughts">
+                        <div class="form-icon">
+                            <i class="icofont icofont-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar inner chat end-->
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="">
+                                <div class="main-menu-header">
+                                    <img class="img-40 img-radius" src="assets/images/qad.jpg" alt="User-Profile-Image">
+                                    <div class="user-details">
+                                        <span>John Doe</span>
+                                        <span id="more-details">UX Designer<i class="ti-angle-down"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="main-menu-content">
+                                    <ul>
+                                        <li class="more-details">
+                                            <a href="user-p.html"><i class="ti-user"></i>View Profile</a>
+                                            <a href="#!"><i class="ti-settings"></i>Settings</a>
+                                            <a href="sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pcoded-search">
+                                <span class="searchbar-toggle">  </span>
+                                <div class="pcoded-search-box ">
+                                    <input type="text" placeholder="Search">
+                                    <span class="search-icon"><i class="ti-search" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Navigation</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu active pcoded-trigger">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.default">Default</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="dashboard-e.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.ecommerce">Ecommerce</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="dashboard-c.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.crm">CRM</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="dashboard-a.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.analytics">Analytics</span>
+                                                <span class="pcoded-badge label label-info ">NEW</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="dashboard-p.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.project">Project</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+
+                                    <div class="page-body">
+                                        <div class="row">
+
+                                            <!-- In Design Start -->
+                                            <div class="col-md-6 col-xl-4">
+                                                <div class="card bg-c-blue in-design-card">
+                                                    <div class="card-block p-b-10">
+                                                        <p class="f-w-400 m-b-5">En Diseño</p>
+                                                        <h4 class="f-16 m-b-20">AFSL Web app</h4>
+                                                        <div class="inner-dark-card blue-drak-card">
+                                                            <div class="row">
+                                                                <div class="col-sm-6 b-r-default">
+                                                                    <h3 class="d-inline-block num-top">11</h3>
+                                                                    <p class="text-uppercase d-inline-block">Dias Faltantes <br>
+                                                                        en Diseño</p>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <h3 class="d-inline-block m-r-20 m-b-0 num-top">30</h3>
+                                                                    <p class="text-uppercase d-inline-block">Dias para <br>
+                                                                        Finalizar</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="f-right">
+                                                            <canvas id="design-graph-1"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xl-4">
+                                                <div class="card bg-c-pink in-design-card">
+                                                    <div class="card-block p-b-10">
+                                                        <p class="f-w-400 m-b-5">En Diseño</p>
+                                                        <h4 class="f-16 m-b-20">Nortech website</h4>
+                                                        <div class="inner-dark-card pink-drak-card">
+                                                            <div class="row">
+                                                                <div class="col-sm-6 b-r-default">
+                                                                    <h3 class="d-inline-block num-top">18</h3>
+                                                                    <p class="text-uppercase d-inline-block">Dias Faltantes <br>
+                                                                        en Diseño</p>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <h3 class="d-inline-block m-r-20 m-b-0 num-top">20</h3>
+                                                                    <p class="text-uppercase d-inline-block">Dias para <br>
+                                                                        Finalizar</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="f-right">
+                                                            <canvas id="design-graph-2"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-xl-4">
+                                                <div class="card bg-c-yellow in-design-card">
+                                                    <div class="card-block p-b-10">
+                                                        <p class="f-w-400 m-b-5">En Diseño</p>
+                                                        <h4 class="f-16 m-b-20">Evolution Website</h4>
+                                                        <div class="inner-dark-card yellow-drak-card">
+                                                            <div class="row">
+                                                                <div class="col-sm-6 b-r-default">
+                                                                    <h3 class="d-inline-block num-top">15</h3>
+                                                                    <p class="text-uppercase d-inline-block">Dias Faltantes <br>
+                                                                        en Diseño</p>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <h3 class="d-inline-block m-r-20 m-b-0 num-top">60</h3>
+                                                                    <p class="text-uppercase d-inline-block">Dias para  <br>
+                                                                        Finalizar</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="f-right">
+                                                            <canvas id="design-graph-3"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- In Design End -->
+
+                                            <!-- Statestics Start -->
+                                            <div class="col-md-12 col-xl-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Estadisticas</h5>
+                                                        <div class="card-header-left ">
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                <div class="line-example">
+                                                                    <div id="statestics-chart" style=" height:300px;"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 text-center">
+                                                                <div id="invoice" style=" height:300px;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Statestics End -->
+
+                                            <!-- Client Map Start -->
+                                            <div class="col-md-12 col-xl-8 ">
+                                                <div class="card">
+                                                    <div class="card-block user-detail-card">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <img src="assets/images/widget/Group-user.jpg " alt="" class="img-fluid p-b-10">
+                                                                <div class="contact-icon">
+                                                                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="View" ><i class="icofont icofont-eye m-0"></i></button>
+                                                                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Print" ><i class="icofont icofont-printer m-0"></i></button>
+                                                                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Download" ><i class="icofont icofont-download-alt m-0"></i></button>
+                                                                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Share" ><i class="icofont icofont-share m-0"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-8 user-detail">
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <h6 class="f-w-400 m-b-30"><i class="icofont icofont-ui-user"></i>Nombre:</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-7">
+                                                                        <h6 class="m-b-30">Gregory Durk</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <h6 class="f-w-400 m-b-30"><i class="icofont icofont-ui-calendar"></i>Fecha Nacimiento :</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-7">
+                                                                        <h6 class="m-b-30">24 October 2017</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <h6 class="f-w-400 m-b-30"><i class="icofont icofont-ui-email"></i>Email  :</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-7">
+                                                                        <h6 class="m-b-30"><a href="mailto:dummy@example.com">techdemo@example.com</a></h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <h6 class="f-w-400 m-b-30"><i class="icofont icofont-ui-home"></i>Direccion :</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-7">
+                                                                        <h6 class="m-b-30">23/Encrypt square, Melbourn, Australia</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <h6 class="f-w-400 m-b-30"><i class="icofont icofont-ui-touch-phone"></i>Telefono :</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-7">
+                                                                        <h6 class="m-b-30">+(345)234-5287</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <h6 class="f-w-400 m-b-30"><i class="icofont icofont-web"></i>Website :</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-7">
+                                                                        <h6 class="m-b-30"><a href="#!">http://www.demotheme.com</a></h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-5">
+                                                                        <h6 class="f-w-400 m-b-30"><i class="icofont icofont-fax"></i>Fax :</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-7">
+                                                                        <h6 class="m-b-30">+(723)542-2823</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!-- Client Map Start -->
+                                                    <div class="col-md-6">
+                                                        <div class="card client-map">
+                                                            <div class="card-block">
+                                                                <div class="client-detail">
+                                                                    <div class="client-profile">
+                                                                        <img src="assets/images/avatar-1.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="client-contain">
+                                                                        <h5>Gregory Johnes</h5>
+                                                                        <a href="#!" class="text-muted">gregory@demo.com</a>
+                                                                        <p class="text-muted m-0 p-t-10">Product Manager</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="client-card-box">
+                                                                        <div class="row">
+                                                                            <div class="col-6 text-center client-border p-10">
+                                                                                <p class="text-muted m-0">Invitaciones</p>
+                                                                                <span class="text-c-blue f-20 f-w-400">345</span>
+                                                                            </div>
+                                                                            <div class="col-6 text-center p-10">
+                                                                                <p class="text-muted m-0">Pendiente</p>
+                                                                                <span class="text-c-blue f-20 f-w-400">12</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12 client-border-card p-t-10">
+                                                                            <p>Actividad General</p>
+                                                                        </div>
+                                                                        <canvas id="client-map-1" class="client-map-chart" height="70"></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card client-map">
+                                                            <div class="card-block">
+                                                                <div class="client-detail">
+                                                                    <div class="client-profile">
+                                                                        <img src="assets/images/avatar-5.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="client-contain">
+                                                                        <h5>Gregory Johnes</h5>
+                                                                        <a href="#!" class="text-muted">gregory@demo.com</a>
+                                                                        <p class="text-muted m-0 p-t-10">Product Manager</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="client-card-box">
+                                                                        <div class="row">
+                                                                            <div class="col-6 text-center client-border p-10">
+                                                                                <p class="text-muted m-0">Invitaciones</p>
+                                                                                <span class="text-c-green f-20 f-w-400">812</span>
+                                                                            </div>
+                                                                            <div class="col-6 text-center p-10">
+                                                                                <p class="text-muted m-0">Pendiente</p>
+                                                                                <span class="text-c-green f-20 f-w-400">00</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12 client-border-card p-t-10">
+                                                                            <p>Actividad General</p>
+                                                                        </div>
+                                                                        <canvas id="client-map-3" class="client-map-chart" height="70"></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Client Map End -->
+                                                </div>
+                                            </div>
+                                            <!-- Project overview Start -->
+                                            <div class="col-md-12 col-xl-4">
+                                                <div class="card card-overview ">
+                                                    <div class="card-header ">
+                                                        <div class="card-header-left ">
+                                                            <h5>Decripcion del Proyecto/h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="m-b-50">
+                                                            <div class="row justify-content-md-center">
+                                                                <div class="col-sm-12">
+                                                                    <div id="project-overview-chart"
+                                                                         class="project-overview-chart"
+                                                                         style="height:200px;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="p-t-20 p-b-20 ">
+                                                            <div class="row ">
+                                                                <div class="col-sm-6 ">
+                                                                    <span class="bg-c-blue "></span>
+                                                                    <h6 class="m-l-30 f-w-600 m-b-5 ">23.89%</h6>
+                                                                    <p class="text-muted m-l-30 m-b-0 ">Projecto
+                                                                        Procesado</p>
+                                                                </div>
+                                                                <div class="col-sm-6 ">
+                                                                    <canvas id="project-over-sub-1" height="50"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="b-t-default p-t-20 p-b-20 ">
+                                                            <div class="row ">
+                                                                <div class="col-sm-6 ">
+                                                                    <span class="bg-c-pink "></span>
+                                                                    <h6 class="m-l-30 f-w-600 m-b-5 ">17.78%</h6>
+                                                                    <p class="text-muted m-l-30 m-b-0 ">Project Devuelto</p>
+                                                                </div>
+                                                                <div class="col-sm-6 ">
+                                                                    <canvas id="project-over-sub-2" height="50"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="b-t-default p-t-20 p-b-20 ">
+                                                            <div class="row ">
+                                                                <div class="col-sm-6 ">
+                                                                    <span class="bg-c-yellow "></span>
+                                                                    <h6 class="m-l-30 f-w-600 m-b-5 ">10.56%</h6>
+                                                                    <p class="text-muted m-l-30 m-b-0 ">Projecto vendido</p>
+                                                                </div>
+                                                                <div class="col-sm-6 ">
+                                                                    <canvas id="project-over-sub-3" height="50"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Project overview End -->
+                                            <!-- Client Map End -->
+
+                                            <!-- App Design Start -->
+                                            <div class="col-md-12 col-xl-6 ">
+                                                <div class="card app-design">
+                                                    <div class="card-block">
+                                                        <button class="btn btn-primary f-right">Completado</button>
+                                                        <h6 class="f-w-400 text-muted">App design and development</h6>
+                                                        <p class="text-c-blue f-w-400">Android</p>
+                                                        <p class="text-muted">Esta en pruebas de calidad y se revisa la funcionalieda completa/p>
+                                                        <div class="design-description d-inline-block m-r-40">
+                                                            <h3 class="f-w-400">678</h3>
+                                                            <p class="text-muted">Preguntas</p>
+                                                        </div>
+                                                        <div class="design-description d-inline-block">
+                                                            <h3 class="f-w-400">1,452</h3>
+                                                            <p class="text-muted">Comentarios</p>
+                                                        </div>
+                                                        <div class="team-box p-b-20">
+                                                            <p class="d-inline-block m-r-20 f-w-400">Team</p>
+                                                            <div class="team-section d-inline-block">
+                                                                <a href="#! "><img src="assets/images/avatar-2.jpg " data-toggle="tooltip" title="Josephin Doe" alt=" "></a>
+                                                                <a href="#! "><img src="assets/images/avatar-3.jpg " data-toggle="tooltip" title="Lary Doe" alt=" " class="m-l-5 "></a>
+                                                                <a href="#! "><img src="assets/images/avatar-4.jpg " data-toggle="tooltip" title="Alia" alt=" " class="m-l-5 "></a>
+                                                                <a href="#! "><img src="assets/images/avatar-2.jpg " data-toggle="tooltip" title="Suzen" alt=" " class="m-l-5 "></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-box">
+                                                            <p class="d-inline-block m-r-20 f-w-400">Progress</p>
+                                                            <div class="progress d-inline-block">
+                                                                <div class="progress-bar bg-c-blue" style="width:78% "><label>78%</label></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-xl-6 ">
+                                                <div class="card app-design">
+                                                    <div class="card-block">
+                                                        <button class="btn btn-success f-right">Pendiente</button>
+                                                        <h6 class="f-w-400 text-muted">Landing page design</h6>
+                                                        <p class="text-c-green f-w-400">Webdesign</p>
+                                                        <p class="text-muted">Esta en fase de diseño para adaptacion de funcionalidad</p>
+                                                        <div class="design-description d-inline-block m-r-40">
+                                                            <h3 class="f-w-400">271</h3>
+                                                            <p class="text-muted">Preguntas</p>
+                                                        </div>
+                                                        <div class="design-description d-inline-block">
+                                                            <h3 class="f-w-400">816</h3>
+                                                            <p class="text-muted">Comentarios</p>
+                                                        </div>
+                                                        <div class="team-box p-b-20">
+                                                            <p class="d-inline-block m-r-20 f-w-400">Equipo</p>
+                                                            <div class="team-section d-inline-block">
+                                                                <div class="team-section d-inline-block">
+                                                                    <a href="#! "><img src="assets/images/avatar-3.jpg " data-toggle="tooltip" title="Lary Doe" alt=" " class="m-l-5 "></a>
+                                                                    <a href="#! "><img src="assets/images/avatar-4.jpg " data-toggle="tooltip" title="Alia" alt=" " class="m-l-5 "></a>
+                                                                    <a href="#! "><img src="assets/images/avatar-5.jpg " data-toggle="tooltip" title="Josephin Doe" alt=" "></a>
+                                                                    <a href="#! "><img src="assets/images/avatar-7.jpg " data-toggle="tooltip" title="Suzen" alt=" " class="m-l-5 "></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-box">
+                                                            <p class="d-inline-block m-r-20 f-w-400">Progreso</p>
+                                                            <div class="progress d-inline-block">
+                                                                <div class="progress-bar bg-c-green" style="width:78% "><label>78%</label></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- App Design End -->
+
+                                            <!-- Current Progress Start -->
+                                            <div class="col-md-12">
+                                                <div class="card card-current-prog">
+                                                    <div class="card-header">
+                                                        <div class="card-header-left">
+                                                            <h5>Actual progreso</h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="card-img">
+                                                                                <a href="#!"><img class="img-rounded" src="assets/images/user.png" alt=""></a>
+                                                                            </div>
+                                                                            <div class="card-contain">
+                                                                                <h6 class="f-w-600">Web application</h6>
+                                                                                <p class="text-muted">Diseño y desarrollo</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="last-line">
+                                                                                <p class="">Ultima actualizacion hoy 4:24 AM</p>
+                                                                            </div>
+                                                                            <div class="card-icon-time">
+                                                                                <a href="#!"><i class="icofont icofont-ui-clock text-muted"></i></a>
+                                                                                <p class="text-muted">15:32</p>
+                                                                            </div>
+                                                                            <div class="card-icon-time">
+                                                                                <a href="#!"><i class="icofont icofont-ui-messaging text-muted"></i></a>
+                                                                                <p class="text-muted">984</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar bg-c-blue" style="width:50%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="card-img">
+                                                                                <a href="#!"><img class="img-rounded" src="assets/images/user.png" alt=""></a>
+                                                                            </div>
+                                                                            <div class="card-contain">
+                                                                                <h6 class="f-w-600">modulo login </h6>
+                                                                                <p class="text-muted">Desarrollo</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="last-line">
+                                                                                <p class="">Ultima actualizacion  a 2:24 AM</p>
+                                                                            </div>
+                                                                            <div class="card-icon-time">
+                                                                                <a href="#!"><i class="icofont icofont-ui-clock text-muted"></i></a>
+                                                                                <p class="text-muted">14:45</p>
+                                                                            </div>
+                                                                            <div class="card-icon-time">
+                                                                                <a href="#!"><i class="icofont icofont-ui-messaging text-muted"></i></a>
+                                                                                <p class="text-muted">657</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar bg-c-pink" style="width:90%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="card-img">
+                                                                                <a href="#!"><img class="img-rounded" src="assets/images/user.png" alt=""></a>
+                                                                            </div>
+                                                                            <div class="card-contain">
+                                                                                <h6 class="f-w-600">Modulo Pruebas</h6>
+                                                                                <p class="text-muted">Probando</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="last-line">
+                                                                                <p class="">Ultima actualizacion a 2:24 AM</p>
+                                                                            </div>
+                                                                            <div class="card-icon-time">
+                                                                                <a href="#!"><i class="icofont icofont-ui-clock text-muted"></i></a>
+                                                                                <p class="text-muted">20:00</p>
+                                                                            </div>
+                                                                            <div class="card-icon-time">
+                                                                                <a href="#!"><i class="icofont icofont-ui-messaging text-muted"></i></a>
+                                                                                <p class="text-muted">200</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar bg-c-yellow" style="width:70%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Current Progress End -->
+
+                                            <!-- Project & Task Start -->
+                                            <div class="col-md-12 col-xl-6 ">
+                                                <div class="card project-task">
+                                                    <div class="card-header">
+                                                        <div class="card-header-left ">
+                                                            <h5>Tiempo usado : tareas del projecto  </h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block p-b-0">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Proyecto y tareas</th>
+                                                                        <th>Tiempo usado</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="task-contain">
+                                                                                <h6 class="bg-c-blue d-inline-block text-center">U</h6>
+                                                                                <p class="d-inline-block m-l-20 m-b-0">UI Diseño</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="d-inline-block m-r-20">4 : 36</p>
+                                                                            <div class="progress d-inline-block">
+                                                                                <div class="progress-bar bg-c-blue" style="width:80%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="task-contain">
+                                                                                <h6 class="bg-c-pink d-inline-block text-center">R</h6>
+                                                                                <p class="d-inline-block m-l-20 m-b-0">Rediseño Android App</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="d-inline-block m-r-20">5 : 16</p>
+                                                                            <div class="progress d-inline-block">
+                                                                                <div class="progress-bar bg-c-pink" style="width:60%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="task-contain">
+                                                                                <h6 class="bg-c-yellow d-inline-block text-center">L</h6>
+                                                                                <p class="d-inline-block m-l-20 m-b-0">Logo Diseñado</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="d-inline-block m-r-20">8 : 15</p>
+                                                                            <div class="progress d-inline-block">
+                                                                                <div class="progress-bar bg-c-yellow" style="width:50%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="task-contain">
+                                                                                <h6 class="bg-c-green d-inline-block text-center">A</h6>
+                                                                                <p class="d-inline-block m-l-20 m-b-0">Pagina destino</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="d-inline-block m-r-20">11 : 20</p>
+                                                                            <div class="progress d-inline-block">
+                                                                                <div class="progress-bar bg-c-green" style="width:50%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="task-contain">
+                                                                                <h6 class="bg-c-blue d-inline-block text-center">L</h6>
+                                                                                <p class="d-inline-block m-l-20 m-b-0">Logo Diseño</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="d-inline-block m-r-20">1 : 30</p>
+                                                                            <div class="progress d-inline-block">
+                                                                                <div class="progress-bar bg-c-blue" style="width:50%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="task-contain">
+                                                                                <h6 class="bg-c-yellow d-inline-block text-center">L</h6>
+                                                                                <p class="d-inline-block m-l-20 m-b-0">Logo Diseño</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <p class="d-inline-block m-r-20">2 : 12</p>
+                                                                            <div class="progress d-inline-block">
+                                                                                <div class="progress-bar bg-c-yellow" style="width:50%">
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-xl-6">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="card-header-left">
+                                                            <h5>Actividades</h5>
+                                                        </div>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="icofont icofont-simple-left "></i></li>
+                                                                <li><i class="icofont icofont-maximize full-card"></i></li>
+                                                                <li><i class="icofont icofont-minus minimize-card"></i></li>
+                                                                <li><i class="icofont icofont-refresh reload-card"></i></li>
+                                                                <li><i class="icofont icofont-error close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="card-notification">
+                                                            <div class="card-noti-conatin">
+                                                                <small>5 mins ago</small>
+                                                                <p class="text-muted m-b-30">Jennifer te envió un archivo adjunto</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-notification">
+                                                            <div class="card-noti-conatin">
+                                                                <small>45 mins ago</small>
+                                                                <p class="text-muted m-b-30">Paul ha enviado una solicitud de acceso a la carpeta del proyecto.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-notification">
+                                                            <div class="card-noti-conatin">
+                                                                <small>2 days ago</small>
+                                                                <p class="text-muted m-b-30">Demin cambia el ded line en el proyecto</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-notification">
+                                                            <div class="card-noti-conatin">
+                                                                <small>12 mins ago</small>
+                                                                <p class="text-muted m-b-30">jennifer te invita a unirte al proyecto</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-notification">
+                                                            <div class="card-noti-conatin">
+                                                                <small>60 mins ago</small>
+                                                                <p class="text-muted m-b-30">Josefina comparte una carpeta contigo</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-notification">
+                                                            <div class="card-noti-conatin">
+                                                                <small>43 mins ago</small>
+                                                                <p class="text-muted m-b-0">Josefina comparte una carpeta contigo</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Project & Task End -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="styleSelector">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../bower_components/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../bower_components/modernizr/js/modernizr.js"></script>
+    <script type="text/javascript" src="../bower_components/modernizr/js/css-scrollbars.js"></script>
+
+    <!-- Todo js -->
+    <script type="text/javascript" src="assets/pages/todo/todo.js"></script>
+    <!-- Horizontal-Timeline js -->
+    <script type="text/javascript" src="assets/pages/dashboard/horizontal-timeline/js/main.js"></script>
+    <!-- AM charts -->
+    <script src="assets/pages/widget/amchart/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/gauge.js"></script>
+    <script src="assets/pages/widget/amchart/pie.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <!-- peity Chart js -->
+    <script src="../bower_components/peity/js/jquery.peity.js "></script>
+
+    <!-- Chartlist charts -->
+    <script src="../bower_components/chartist/js/chartist.js "></script>
+    <script src="assets/pages/chart/chartlist/js/chartist-plugin-threshold.js "></script>
+    <script src="assets/pages/chart/chartlist/js/chartist-plugin-tooltip.min.js "></script>
+    <!-- c3 chart js -->
+    <script src="../bower_components/d3/js/d3.min.js"></script>
+    <script src="../bower_components/c3/js/c3.js"></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="../bower_components/chart.js/js/Chart.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="../bower_components/i18next/js/i18next.min.js"></script>
+    <script type="text/javascript" src="../bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="../bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/pages/dashboard/project-dashboard.js"></script>
+
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/demo-12.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
